@@ -4,7 +4,7 @@ import Project1 from "../components/Project1";
 
 export default function project1() {
   return (
-    <ContainerBlock>
+    <ContainerBlock title="Tom Sclater - Portfolio" description="Get Creative.">
       <Project1 />
     </ContainerBlock>
   );
