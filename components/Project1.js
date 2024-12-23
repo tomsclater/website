@@ -53,7 +53,7 @@ export default function Project1() {
                 This is my first project.
               </h1>
               <p className="font-light text-base text-gray-200 mt-2">
-                Take a look at the Hacker Speak Password Generator below.
+                Take a look at the Secure Password Generator below.
               </p>
             </header>
             <div className="icons-container inline-flex flex-col my-20">
@@ -74,7 +74,7 @@ export default function Project1() {
               }}
             >
               <label htmlFor="password" className="text-sm text-gray-600 mx-4">
-                Click the button to generate a hacker-style password
+                Click the button to generate a secure password
               </label>
               <button
                 type="submit"
