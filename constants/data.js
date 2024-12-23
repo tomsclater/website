@@ -9,7 +9,7 @@ const userData = {
   projects: [
     {
       title: "Tailwind Master Kit",
-      link: "https://tailwindmasterkit.com",
+      link: "/project1",
       imgUrl: "/tmk.jpg",
     },
     {
