@@ -1,11 +1,11 @@
 import React from "react";
 import ContainerBlock from "../components/ContainerBlock";
-import Projects1 from "../components/Projects1";
+import Project1 from "../components/Project1";
 
 export default function contact() {
   return (
     <ContainerBlock>
-      <Projects1 />
+      <Project1 />
     </ContainerBlock>
   );
 }
