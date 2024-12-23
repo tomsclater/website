@@ -14,12 +14,12 @@ const userData = {
     },
     {
       title: "PlaceholderTech",
-      link: "https://placeholdertech.in",
+      link: "https://placeholder.com",
       imgUrl: "/placeholdertech.png",
     },
     {
       title: "Portfolio",
-      link: "https://manuarora.in",
+      link: "https://123.com",
       imgUrl: "/portfolio.png",
     },
     {
@@ -62,9 +62,9 @@ const userData = {
   experience: [
     {
       title: "Software Developer",
-      company: "mroads",
+      company: "123",
       year: "2021",
-      companyLink: "https://mroads.com",
+      companyLink: "https://123.com",
       desc: "Contributed to our flagship product - Panna - which is an AI powered candidate interviewing product.",
     },
     {
@@ -76,10 +76,10 @@ const userData = {
     },
     {
       title: "Founder and Developer",
-      company: "Algochurn",
+      company: "Epic Games",
       year: "2021",
-      companyLink: "https://algochurn.com",
-      desc: "Your last moment revision friend right before a Tech coding interview. Practice problems and get hired at top Product based companies.",
+      companyLink: "https://epicgames.com",
+      desc: "Gamer 4 life.",
     },
     {
       title: "Internship",
@@ -90,28 +90,27 @@ const userData = {
     },
     {
       title: "Graduation",
-      company: "UPES, Dehradun.",
+      company: "UK.",
       year: "2019",
-      companyLink: "https://upes.co.in",
-      desc: "Major in Computer Science and Engineering with a CGPA of 7.0. Nobody asks this but it's okay.",
+      companyLink: "https://uk.com",
+      desc: "Major in Computer Science and Engineering with Masters and distinction.",
     },
     {
       title: "High School",
-      company: "Delhi Public School, Jaipur.",
+      company: "UK.",
       year: "2015",
-      companyLink: "https://upes.co.in",
-      desc: "Subjects being PCM - I barely survived with 93.6% marks aggregate. Flex fridays, fellas.",
+      companyLink: "123.com",
+      desc: "Best of the best.",
     },
   ],
-  resumeUrl:
-    "https://drive.google.com/file/d/1xmE3BOmgM7TAOOgVp36xQIQvYDntDYoo/view?usp=sharing",
+  resumeUrl: "123.com",
   socialLinks: {
-    instagram: "https://instagram.com/maninthere",
-    twitter: "https://twitter.com/mannupaaji",
-    linkedin: "https://linkedin.com/in/manuarora28",
-    github: "https://github.com/manuarora700",
+    instagram: "https://instagram.com/tomsclater",
+    twitter: "https://twitter.com/tomsclater",
+    linkedin: "https://linkedin.com/in/tomsclater",
+    github: "https://github.com/tomsclater",
     facebook: "https://facebook.com/",
-    peerlist: "https://peerlist.io/manuarora",
+    peerlist: "https://peerlist.io/tomsclater",
   },
 };
 
