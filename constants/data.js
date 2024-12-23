@@ -1,11 +1,11 @@
 const userData = {
-  githubUsername: "manuarora700",
-  name: "Manu Arora",
+  githubUsername: "tomsclater",
+  name: "Tom Sclater",
   designation: "Full-Stack Developer",
   avatarUrl: "/avatar.png",
-  email: "manuarorawork@gmail.com",
-  phone: "+91 9587738861",
-  address: "Jaipur, Rajasthan, India.",
+  email: "tomsclater@live.com",
+  phone: "+12345678910",
+  address: "London.",
   projects: [
     {
       title: "Tailwind Master Kit",
