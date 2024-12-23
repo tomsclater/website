@@ -1,28 +1,41 @@
 import React, { useState } from "react";
-// import userData from "@constants/data";
 
 export default function Project1() {
-  const [inputText, setInputText] = useState("");
-  const [asciiArt, setAsciiArt] = useState("");
+  const [password, setPassword] = useState("");
 
-  const generateAsciiArt = (text) => {
-    // Simple ASCII Art generator logic
-    if (!text) return;
+  // Function to generate hacker speak password
+  const generateHackerPassword = () => {
+    const chars =
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    const leetMapping = {
+      A: "4",
+      B: "8",
+      E: "3",
+      G: "6",
+      H: "#",
+      I: "1",
+      O: "0",
+      S: "5",
+      T: "7",
+      Z: "2",
+      a: "4",
+      e: "3",
+      l: "1",
+      o: "0",
+      s: "5",
+      t: "7",
+    };
 
-    const asciiGenerated = text
-      .split("")
-      .map((char) => char.charCodeAt(0).toString(2).padStart(8, "0"))
-      .join(" ");
-    setAsciiArt(asciiGenerated);
-  };
+    let passwordLength = 12; // You can customize the length
+    let passwordGenerated = "";
 
-  const handleInputChange = (e) => {
-    setInputText(e.target.value);
-  };
+    for (let i = 0; i < passwordLength; i++) {
+      const randomChar = chars.charAt(Math.floor(Math.random() * chars.length));
+      const leetChar = leetMapping[randomChar] || randomChar;
+      passwordGenerated += leetChar;
+    }
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    generateAsciiArt(inputText);
+    setPassword(passwordGenerated);
   };
 
   return (
@@ -40,45 +53,41 @@ export default function Project1() {
                 This is my first project.
               </h1>
               <p className="font-light text-base text-gray-200 mt-2">
-                Take a look at my ASCII generator below.
+                Take a look at the Hacker Speak Password Generator below.
               </p>
             </header>
             <div className="icons-container inline-flex flex-col my-20">
               {/* Icons section removed for simplicity */}
             </div>
-
             <div className="social-icons flex flex-row space-x-8">
               {/* Social links section removed for simplicity */}
             </div>
           </div>
 
-          {/* ASCII Art Generator Form */}
-          <div className="ascii-art-section">
+          {/* Hacker Speak Password Generator Form */}
+          <div className="password-generator-section">
             <form
               className="form rounded-lg bg-white p-4 flex flex-col"
-              onSubmit={handleSubmit}
+              onSubmit={(e) => {
+                e.preventDefault();
+                generateHackerPassword();
+              }}
             >
-              <label htmlFor="text" className="text-sm text-gray-600 mx-4">
-                Enter Text to Generate ASCII Art
+              <label htmlFor="password" className="text-sm text-gray-600 mx-4">
+                Click the button to generate a hacker-style password
               </label>
-              <input
-                type="text"
-                className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
-                name="text"
-                value={inputText}
-                onChange={handleInputChange}
-              />
               <button
                 type="submit"
-                className="bg-blue-500 rounded-md w-1/2 mx-4 mt-8 py-2 text-gray-50 text-xs font-bold"
+                className="bg-green-500 rounded-md w-1/2 mx-4 mt-8 py-2 text-gray-50 text-xs font-bold"
               >
-                Generate ASCII Art
+                Generate Password
               </button>
             </form>
 
-            {asciiArt && (
-              <div className="ascii-art-output mt-10 p-4 bg-gray-800 text-gray-50 font-mono">
-                <pre>{asciiArt}</pre>
+            {password && (
+              <div className="password-output mt-10 p-4 bg-gray-800 text-gray-50 font-mono">
+                <p className="text-center text-xl">Generated Password:</p>
+                <pre className="text-center mt-2">{password}</pre>
               </div>
             )}
           </div>
