@@ -4,7 +4,7 @@ import Contact from "../components/Contact";
 
 export default function contact() {
   return (
-    <ContainerBlock title="Tom Sclater - Portfolio" description="Get Creative.">
+    <ContainerBlock title="Exfiltr8 - Cyber Consulting" description="Get Creative.">
       <Contact />
     </ContainerBlock>
   );

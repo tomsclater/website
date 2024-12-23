@@ -9,7 +9,7 @@ import userData from "@constants/data";
 
 export default function Home({ repositories }) {
   return (
-    <ContainerBlock title="Tom Sclater - Portfolio" description="Get Creative.">
+    <ContainerBlock title="Exfiltr8 - Cyber Consulting" description="Get Creative.">
       <Hero />
       <FavouriteProjects />
       <LatestCode repositories={repositories} />

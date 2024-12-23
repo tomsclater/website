@@ -1,7 +1,7 @@
 const userData = {
   githubUsername: "tomsclater",
-  name: "Tom Sclater",
-  designation: "Full-Stack Developer",
+  name: "Exfiltr8",
+  designation: "Cyber Consulting",
   avatarUrl: "/avatar.png",
   email: "tomsclater@live.com",
   phone: "+12345678910",
